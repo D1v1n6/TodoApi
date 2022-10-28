@@ -1,9 +1,14 @@
 from django.shortcuts import render
+from django.shortcuts import render, redirect
+from django.http import HttpResponse
 from rest_framework import generics
 from .serializers import *
 from .models import *
 
 # Create your views here.
+def home(request):
+    return render(request, 'index.html')
+
 #CRUD Operations
 
 class ListTodo(generics.ListAPIView):                #Read
