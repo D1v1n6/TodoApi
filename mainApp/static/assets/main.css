@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.onboard {
+    box-sizing: border-box;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+.row {
+    display: flex;
+    align-items: center;
+    margin: 50px 0px;
+}
+.col-1 {
+    flex-basis: 40%;
+    position: relative;
+}
+.col-1 h1 {
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    color: #110EAF;
+}
+.col-1 p {
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #000000;
+}
+form {
+    margin-top: 90px;
+}
+input[type=email] {
+    width: 402px;
+    height: 60px;
+    padding-left: 20px;
+    border: 1px solid #FFCD29;
+    border-radius: 8px;
+}
+input[placeholder] {
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 19px;
+    color: #1E1E1E;
+}
+input[type=submit] {
+    position: absolute;
+    left: 1px;
+    top: 300px;
+    width: 200px;
+    height: 50px;
+    background: #110EAF;
+    border-radius: 10px;
+    border-style: none;
+    /* submit text */
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+#check {
+    position: absolute;
+    top: 180px;
+    font-family: 'lato';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    color: #1E1E1E;
+}
+.col-2 {
+    position: relative;
+    flex: 40%;
+}
+.col-2 img {
+    position: relative;
+    width: 90%;
+    left: 90px;
+}
+@media only screen and (max-width:700px) {
+    .row {
+        flex-direction: column-reverse;
+    }
+    .col-2 {
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .col-1 {
+        flex-basis: 100%;
+    }
+    .col-1 h1 {
+        font-size: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .col-1 p {
+        font-size: 20px;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 15px;
+    }
+    form {
+        margin-left: 15px;
+    }
+    input[type=email] {
+        width: 340px;
+        height: 60px;
+        padding-left: 20px;
+        border: 1px solid #FFCD29;
+        border-radius: 8px;
+    }
+    input[type=submit] {
+        position: absolute;
+        left: 15px;
+        top: 320px;
+    }
+    #check {
+        position: absolute;
+        top: 185px;
+    }
+    .col-2 img {
+        position: relative;
+        width: 90%;
+        left: 0px;
+    }
+}
