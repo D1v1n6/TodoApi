@@ -27,6 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+STATICFILES_DIR = [
+    "/ToDo/ToDoList/mainApp/static",
+]
 
 # Application definition
 
