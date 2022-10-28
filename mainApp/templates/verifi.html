@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'assets/verifi.css' %}">
+    <title>Email Verification</title>
+</head>
+<body>
+    <div class="container">
+        <img src="{% static 'assets/Mail_sent.png' %}" alt="">
+        <div class="text">
+            <h1>We've sent you an email</h1>
+            <p>Go to your email to open the link</p>
+        </div>
+        <div class="btn-hr-or">
+            <a href="https://accounts.google.com/SignUp" target="_blank"><button class="open-an-email">Open An Email</button></a>
+            <div class="hr-or">
+                <hr><span>OR</span><hr>
+            </div>
+            <a href="entercode.html"><button class="enter-code">Enter Code</button></a>
+        </div>
+    </div>
+</body>
+</html>
